@@ -1,4 +1,4 @@
-export { parseMatchList, parseMatchResult, parseLogo, type ParsedMatch } from "./parser"
+export { parseMatchList, parseMatchResult, parseLogo, type ParsedMatch } from "./parser.js"
 export {
   safeFetchText,
   validateFiksUrl,
@@ -6,4 +6,4 @@ export {
   FetchTimeoutError,
   ResponseTooLargeError,
   TooManyRedirectsError,
-} from "./fetch"
+} from "./fetch.js"

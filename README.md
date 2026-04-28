@@ -2,10 +2,18 @@
 
 TypeScript-bibliotek for å hente og parse kamper, kampresultater og laglogoer fra [fotball.no](https://www.fotball.no) (FIKS).
 
+## Installasjon
+
+```bash
+npm install @steingrd/fotball-no-client
+```
+
+Krever Node.js 18 eller nyere (bruker innebygd `fetch`).
+
 ## Bruk
 
 ```ts
-import { safeFetchText, parseMatchList, parseMatchResult, parseLogo } from "fotball-no-client"
+import { safeFetchText, parseMatchList, parseMatchResult, parseLogo } from "@steingrd/fotball-no-client"
 
 // Hent kampliste for et lag
 const html = await safeFetchText("https://www.fotball.no/lag/...", { validateUrl: true })
